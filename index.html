@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resposive.css">
+    <title>Doc-Q</title>
+</head>
+
+<body>
+    <!-- ======================================== Top Specialist CODE IS START =================== -->
+    <section class="top-specialist-section">
+        <div class="container">
+            <div class="specialist-wrapper">
+                <!-- slider code -->
+                <h3 class=" fs-45-32 fw-700 ">Top Specialist</h3>
+                <div class="arrow-frame-wrapper ">
+                    <img src="./images/arrowleft.png" onclick="scrollLeft1()" class="arrowleft" alt="">
+                    <img src="./images/arrowright.png" onclick="scrollRight()" class="arrowright" alt="">
+                    <div class="specialist-doctors-frame">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== Top Specialist CODE IS END =================== -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ================================ Testimonials CODE START ============================== -->
+    <div class="container2">
+        <div class="testimonials-container">
+            <p class="testimonials-heading p-10">Testimonials</p>
+            <p class="testimonials-para p-10"> Our team of skilled medical professionals and aids ensure that you get
+                the care you need and deserve.</p>
+        </div>
+        <div class="indicators mt-20">
+
+            <div class="elipse-container p-10">
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+                <span class="rectangle"></span>
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+                <span class="elipse"></span>
+            </div>
+        </div>
+        <div class="members-container p-10 mt-20">
+            <div class="individual-member">
+                <p class="member-info pl-20 p-10 fs-20-14 "> Augue nulla montes, eget congue dolor magna vitae
+                    porttitor. Mollis aliquam tristique porttitor blandit nibh dui tristique quam.......</p>
+                <div class="ratings pl-20 p-10">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+
+                    <p class="member-name ">John Doe</p>
+                    <p class="member-prof ">Engineer</p>
+                    <img src="./images/Rectangle 60.png" class="member-profile" alt="">
+                </div>
+            </div>
+            <div class="individual-member">
+                <p class="member-info pl-20 p-10 "> Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+                    aliquam tristique porttitor blandit nibh dui tristique quam.......</p>
+                <div class="ratings pl-20 p-10">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+
+                    <p class="member-name ">John Doe</p>
+                    <p class="member-prof ">Engineer</p>
+                    <img src="./images/Rectangle 59.png" class="member-profile" alt="">
+                </div>
+            </div>
+            <div class="individual-member">
+                <p class="member-info pl-20 p-10"> Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+                    aliquam tristique porttitor blandit nibh dui tristique quam.......</p>
+                <div class="ratings pl-20 p-10">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+
+                    <p class="member-name ">John Doe</p>
+                    <p class="member-prof ">Engineer</p>
+                    <img src="./images/Rectangle 58.png" class="member-profile" alt="">
+                </div>
+            </div>
+            <div class="individual-member">
+                <p class="member-info pl-20 p-10"> Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+                    aliquam tristique porttitor blandit nibh dui tristique quam.......</p>
+                <div class="ratings pl-20 p-10">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+                    <img src="./images/emojione_star.png" alt="">
+
+                    <p class="member-name ">John Doe</p>
+                    <p class="member-prof ">Engineer</p>
+                    <img src="./images/Rectangle 57.png" class="member-profile" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ================================ Testimonials CODE END ============================== -->
+    <script>
+        var doctorsContainer = document.querySelector(".specialist-doctors-frame");
+        function scrollLeft1() {
+            console.log("scroll left")
+            doctorsContainer.scrollBy(290, 0);
+        }
+        
+        function scrollRight() {
+            console.log("scroll right")
+            doctorsContainer.scrollBy(-290, 0);
+        }
+
+
+
+        var doctorsData = [
+            { name: "Dr. Travis Oman", specialization: "Opthalmogist", reviews: 120, img: 'Rectangle33.png' },
+            { name: "Dr. Richard Brook", specialization: "Gastroenterlogist", reviews: 120, img: 'Rectangle35.png' },
+            { name: "Dr. Annah Ray", specialization: "entician", reviews: 120, img: 'Rectangle34.png' },
+            { name: "Dr. Richard Brook", specialization: "Gastroenterlogist", reviews: 120, img: 'Rectangle35.png' },
+            { name: "Dr. Vivian Monroe", specialization: "PPediatry Surgeon", reviews: 120, img: 'Rectangle36.png' },
+            { name: "Dr. Richard Brook", specialization: "Gastroenterlogist", reviews: 120, img: 'Rectangle35.png' },
+
+        ];
+
+        for (var i = 0; i < doctorsData.length; i++) {
+            var doctor = doctorsData[i];
+
+
+            var doctorHtml = `
+            <div class="card-box text-center">
+                <div class="img-box ">
+                    <img src="./images/${doctor.img}" class="image" alt="">
+                    <img src="./images/reateing.png" class="reating" alt="">
+                </div>
+                <h3 class="fs-24-18 fw-600 text-center name-heading">${doctor.name}</h3>
+                <p class="fs-16-12 fw-500 black-50 text-center first-para">${doctor.specialization}</p>
+                <button class="primary-btn mx-auto">Book Now</button>
+                <p class="fs-16-12 fw-500 black-50 text-center sec-para">${doctor.reviews} Reviews
+            </div>
+            `;
+
+
+            doctorsContainer.innerHTML += doctorHtml;
+        }
+    </script>
+
+</body>
+
+</html>

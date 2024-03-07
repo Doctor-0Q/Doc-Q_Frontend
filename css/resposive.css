@@ -1,0 +1,68 @@
+
+/*  */
+/* =================================== Testimonials CSS CODE START ================================ */
+@media (width<=1500px) {
+    .individual-member {
+        padding: 25px 10px;
+    }
+    .member-profile {
+
+        bottom: -15px;
+    }
+}
+@media (width<=360px) {
+    .individual-member {
+        padding: 25px 10px;
+
+        /* margin-right: 10px; */
+        width: 320px;
+    }
+    .members-container {
+        /* overflow-y: hidden; */
+        padding: 6px;
+    }
+    .member-profile {
+
+        bottom: -10px;
+    }
+    .member-prof {
+
+        padding: 5px 0 10px 35px;
+    }
+    .member-name {
+
+        padding: 5px 0 0 35px;
+    }
+
+}
+@media (width<=330px) {
+    .member-profile {
+        bottom: -15px;
+    }
+}
+/* =================================== Testimonials CSS CODE End ================================ */
+@media (max-width:920px) {
+    .arrowleft {
+        position: absolute;
+        z-index: 8;
+        left: 35%;
+        bottom: -51px;
+   
+        top: unset;
+        cursor: pointer;
+        transform: translateX(-70%);
+    }
+    .arrowright {
+        position: absolute;
+        z-index: 8;
+        right: 29%;
+        bottom: -40px;
+        top: unset;
+        cursor: pointer;
+        transform: translateX(-40%);
+    }
+    .member-info{
+      padding-right: 30px !important;
+    }
+
+}
