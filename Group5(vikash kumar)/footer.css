@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.company{
+width: 100;
+height: 100;
+}
+.company .row{
+  width: 100%;
+  position: relative;
+}
+.company .row .col{
+    width: 75%;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    background: linear-gradient(178deg, #5284b5, #8ABBF6);
+    border-radius: 29px;
+    position: relative;
+
+}
+.col .rigth-containt{
+
+   width: 50%;
+    margin: 20px 0px;
+    
+}
+.col .rigth-containt h3{
+    font-weight: bold;
+    font-family: "Source Code Pro", monospace;
+    line-height: 2px;
+    color: white;
+}
+
+.col .rigth-containt p{
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    font-size: smaller;
+    font-weight: 700;
+}
+.col .col-left{
+    margin: auto 0px;
+}
+
+.col .col-left .btn{
+    margin: auto;
+    width: 100%;
+    padding: 14px 29px;
+    border: 1px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #5284B5;
+    font-weight: bold;
+}
+.col .col-left .btn:active{
+    box-shadow: 2px 8px 7px 2px;
+}
+
+.col-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 93px;
+
+}
+.col-img .companyproduct{
+    width: 16%;
+    margin: 0% 4%;
+}
+.bg-overal{
+position:absolute;
+width: 946.44px;
+height:605px;
+border: 1px solid  #B3E5FC;
+border-radius: 50%;
+left: -315px;
+border-bottom: none;
+}
+.small-overal{
+width:794.91px;
+height: 557.42px;
+position: absolute;
+top: 57px;
+left:122px;
+opacity: 19.69%;
+background: linear-gradient(178deg, #C8E6C9, #B3E5FC);
+border-radius: 50%;
+z-index: -1;
+}
+.container-fluid{
+    
+    width: 100%;
+    height: auto;
+    background: #E9F7F8;
+    margin-top: 200px;
+    border-radius: 15px 15px 0px 0px;    
+
+}
+   .container-fluid .row{
+    display: flex;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 115px 0px;
+    margin: 0px 16px;
+   }
+   .logo{
+    display: flex;
+   }
+   .logo h3{
+    margin: auto -10px;
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    font-size: xx-large;
+   }
+.logo h3 .text{
+    color: #5284B5;
+
+}
+
+.container-fluid .row .company-info{
+    display: block;
+    width: 25%;
+
+
+}
+.container-fluid .row .company-info p{
+    color: #00000054;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.container-fluid .row .item{
+    margin: 0px 30px;
+    display: inline-block;
+}
+.container-fluid .row .item h5{
+    color:  #5284B5;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.container-fluid .row .item .item-list{
+    display: inline-grid;
+}
+a{
+    text-decoration: none;
+    color: #00000054;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.socalmadia{
+    width: 200px;
+}
+.socalicon{
+    display: flex;
+    justify-content: space-evenly;
+    color:#5284B5;
+ 
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: #00000054;
+}
+.fav-icon{
+    height: 30px;
+    background:#5284b550;
+    width: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.plant{
+    
+        position: relative;
+        width: 232px;
+        margin-top: -183px;
+        float: right;
+}
+select{
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: #5284B5 2px solid;
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    .company .row{
+        
+    }
+    .company .row .col{
+        flex-direction: column;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    .col .rigth-containt{
+        width: auto;
+        margin: 0px;
+    }
+    .col .col-left{
+        argin: 0px auto;
+    }
+    .col .col-left .btn{
+
+    }
+
+
+    .bg-overal{
+        position: absolute;
+    width: 216.44px;
+    height: 170px;
+    border: 1px solid #B3E5FC;
+    border-radius: 50%;
+    left: 0px;
+    z-index: -1;
+}
+.bg-overal .small-overal{
+    width: 204.91px;
+    height: 145.42px;
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    opacity: 19.69%;
+    background: linear-gradient(178deg, #C8E6C9, #B3E5FC);
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    
+    .container-fluid{
+        height: auto;
+    }
+    .container-fluid .row{
+        display: flex;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    flex-wrap: wrap;
+    margin: 0px;
+    }
+    .logo{
+        margin-bottom: -30px;
+    }
+    .logo h3{
+        margin: auto -9px;
+        font-family: 'Source Code Pro';
+        font-weight: 900;
+        font-size: x-large;
+    }
+    .logo h3 .text{
+
+    }
+    .container-fluid .row .company-info{
+        display: block;
+        width: 100%;
+        margin: 0px 32px;
+    }
+    .container-fluid .row .item{
+        margin: 0px 20px;
+        display: inline-block;
+       width:auto;
+    }
+
+    .container-fluid .row .item h5{
+
+    }
+    .container-fluid .row .item .item-list{
+
+    }
+    .a{
+    font-size: small;
+}
+    
+    .socalmadia{
+        width: 129px;
+        margin: 20px;
+    }
+    .select{
+
+    }
+    .plant{
+        position: relative;
+        width: 189px;
+        top: 37px;
+    }
+}
