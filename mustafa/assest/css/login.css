@@ -1,0 +1,99 @@
+:root {
+    --blue: #5284B5;
+    --green: #27AE60;
+    --white: #fff;
+    --grey: #4F4F4F;
+    --greyDark: #4F4F4F;
+    --black: #000;
+    --red: #ae0303;
+    --yellow: #FFBF00;
+}
+
+html,
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Mukta", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background: var(--blue);
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--white);
+    margin: 0;
+    z-index: 10;
+    padding: 30px 45px;
+}
+
+#wrp{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formwrp {
+    padding: 0;
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+label {
+    color: var(--grey);
+    font-weight: 600;
+}
+
+input,
+select {
+    border: none;
+    font-size: 20px;
+    line-height: 2em;
+    font-family: "Mukta", sans-serif;
+    outline: none;
+    padding: 0;
+}
+
+input:focus,
+select:focus {
+    border: none;
+    outline: none;
+}
+
+/*Button*/
+#frmbtnwrp {
+    padding-top: 30px;
+    position: relative;
+}
+
+.frmbtn {
+    background-color: var(--green);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+/*Button ENd*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc-Q Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assest/css/login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="container">
+      <div id="wrp">
+        <h1>Welcome to Doc-Q</h1>
+        <div class="formwrp">
+          <label for="mail">Mail</label>
+          <input type="mail" id="mail" />
+          <span id="errmail" class="err"></span>
+        </div>
+        <div class="formwrp">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+          <span id="errpassword" class="err"></span>
+        </div>
+        <div class="formwrp">
+          <label for="usertype">Login As</label>
+          <select id="usertype">
+            <option value="patient">Patient</option>
+            <option value="doctor">Doctor</option>
+          </select>
+          <span id="errusertype" class="err"></span>
+        </div>
+        <div id="frmbtnwrp">
+          <button id="frmbtn" class="frmbtn">Login</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="assest/js/login.js"></script>
+  </body>
+</html>

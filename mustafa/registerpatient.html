@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc-Q Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assest/css/register.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="container">
+      <h1>Tell us about your self</h1>
+      <div class="formwrp">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <span id="errname" class="err"></span>
+      </div>
+      <div class="formwrp">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+        <span id="errname" class="err"></span>
+      </div>
+      <div class="formwrp">
+        <label for="city">City</label>
+        <input type="text" id="city" />
+        <span id="errcity" class="err"></span>
+      </div>
+
+      <div class="formwrp">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="nottosay">Perfer not to say</option>
+        </select>
+        <span id="errusertype" class="err"></span>
+      </div>
+
+      <div class="formwrp">
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="age"
+          min="1"
+          step="1"
+          max="150"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+        />
+        <span id="errage" class="err"></span>
+      </div>
+
+      <div id="frmbtnwrp">
+        <button id="frmbtnpatient" class="frmbtn">Finish</button>
+      </div>
+    </main>
+
+    <script src="assest/js/register.js"></script>
+  </body>
+</html>

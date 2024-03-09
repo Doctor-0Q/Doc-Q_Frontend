@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc-Q Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assest/css/emailverification.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="container">
+      <h1>Email Verification</h1>
+      <p id="message"></p>
+      <div id="validate">
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit1"
+          oninput="moveToNext(this, 'digit2')"
+        />
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit2"
+          oninput="moveToNext(this, 'digit3')"
+        />
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit3"
+          oninput="moveToNext(this, 'digit4')"
+        />
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit4"
+          oninput="moveToNext(this, 'digit5')"
+        />
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit5"
+          oninput="moveToNext(this, 'digit6')"
+        />
+        <input
+          class="digit"
+          type="number"
+          step="1"
+          min="1"
+          max="9"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          id="digit6"
+          oninput="moveToNext(this, 'frmbtn')"
+        />
+      </div>
+      <div>
+        <p id="remain"><span id="secconds">0</span> secs remaining</p>
+      </div>
+      <div id="frmbtnwrp">
+        <button id="frmbtn" class="frmbtn">Verify Account</button>
+      </div>
+      <div>
+        <p>Didn't receive the code, <span id="resendemail" class="btn" onclick="resend();"> Resend </span></p>
+      </div>
+    </main>
+
+    <script src="assest/js/emailverification.js"></script>
+  </body>
+</html>
