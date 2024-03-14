@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Doc-Q</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo" style="height: 45px;">
+        </div>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Find Doctor</a></li>
+            <li><a href="#">Login/Register</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Our Services</a></li>
+            <li class="hideOnMobile"><a href="#">Find Doctor</a></li>
+            <li class="hideOnMobile"><a href="#">Login/Register</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <ul>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <div class="search-bars">
+        <input type="text" placeholder="Search for a doctor">
+        <input type="text" placeholder="Search for a nearby doctor">
+    </div>
+    <div class="image-container-right">
+        <img src="img/pngwing 2.png" alt="Doctor">
+        <img src="img/pngwing 1.png" alt="Doctor">
+    </div>
+    <div class="image-container-mid">
+        <img src="img/Rectangle 74.png" alt="Doctor">
+        <img src="img/Rectangle 75.png" alt="Doctor">
+        <img src="img/pngwing 3.png" alt="Doctor">
+    </div>
+    <div class="image-container-left">
+        <img src="img/Ellipse 8.png" alt="Doctor">
+        <img src="img/Ellipse 7.png" alt="Doctor">
+    </div>
+
+
+    <footer>
+        <div class="footer-buttons">
+            <button>Consult with a Doctor</button>
+            <button>Order Medicines</button>
+            <button>Book Test</button>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
