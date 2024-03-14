@@ -251,12 +251,15 @@ nav ul li a:hover {
     top: 40px; 
     left: 340px;
     width: 280px;
+    z-index: 1;
 }
 
 .image-container-mid img:nth-child(3) {
-    left: 300px;
-    width: 630px;
+    left: 0px;
+    width: 700px;
+    height: 338px;
     top: 50px;
+    z-index: 2;
 }
 /* Media Queries for Tablet */
 @media screen and (max-width: 1024px) {
