@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.m-10 {
+    margin: 10px;
+}
+.fs-20-14 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.patient-list-container {
+    max-width: 1080px;
+    max-height: 800px;
+    /* border: 1px solid black; */
+}
+.patient-table {
+    width: 100%;
+}
+
+.patient-table th td {
+    /* border: 1px solid black; */
+}
+table,
+td,
+th {
+    /* border: 1px solid black; */
+}
+
+/* #3E6EFE */
+/* #ffd43b */
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 20px; */
+}
+.img-container span {
+
+    height: 20px;
+    width: 20px;
+}
+.img-container span img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.border-blue {
+    border: 1px solid #3E6EFE;
+    /* border-radius: 5px 0 0 3px; */
+
+}
+.border-yellow {
+    border: 1px solid #FFD43B;
+    /* border-radius: 5px 0 0 3px; */
+
+}
+.border-red {
+    border: 1px solid #E33535;
+    border-radius: 0 3px 4px 0;
+
+}
+.border-blue-r {
+    border: 1px solid #3E6EFE;
+    border-radius: 5px 0 0 3px;
+}
+.al-center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#td-active {
+    font-size: 12px;
+    /* padding-bottom: 14px; */
+    position: relative;
+    margin-right: 47px;
+    /* text-align: center; */
+}
+.checked {
+    /* margin-bottom: 10px; */
+    text-align: center;
+    bottom: 2px;
+    color: darkgreen;
+    background-color: lightgreen;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.user-img {
+    height: 15px;
+    width: 15px;
+}
+.user-img img {
+    height: 100%;
+    width: 100%;
+    border: 50%;
+}
+.patient-list-container {
+    height: 100vh;
+    width: 100%;
+}
+/* F3F4F8 */
+/* F9FAFC */
+/* -------------------------------->switch start<------------------------------------------------- */
+/* ====================add this============= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.table-horizatal-scroll{
+    width: 100%;
+    overflow: auto;
+}
+.table-horizatal-scroll::-webkit-scrollbar{
+    height: 5px;
+    appearance: none;
+}
+.table-horizatal-scroll::-webkit-scrollbar-thumb{
+  background-color: #2196F3;
+
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 3px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    transform: translateX(11px);
+}
+.status-toggale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.common-table-row>td{
+    padding: 9px 0;
+    border-top: 1px solid rgba(219, 222, 231,.6);
+    overflow: hidden;
+    /* border-bottom: 1px solid rgba(219, 222, 231,.6); */
+}
+
+.name-profile-freme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.userNameCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(228, 228, 228,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    color: #3E6EFE;
+
+}
+
+/* ================== MUZAFFAR CSS START =========================== */
+.main-patients-wrapper {
+    width: 100%;
+}
+.sub-hader-blue {
+    width: 100%;
+    height: 140px;
+    background-color: #3E6EFE;
+}
+.paitients-table-wrapper {
+    background-color: aliceblue;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.patients-list-frame {
+    width: 96.5%;
+    /* left: 0; */
+    top: -60px;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    justify-content: space-between;
+}
+.patients-list-frame > h4 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgb(67, 65, 65);
+}
+.primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: #3E6EFE;
+    border-radius: 4px;
+}
+.paitients-main-table-wrapper {
+    padding: 10px 6px;
+    margin-top: 7px;
+    border: 1px solid rgba(219, 222, 231,.6);
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    gap: 16px;
+}
+.serch-icon {
+    width: 17px;
+}
+.w-full {
+    width: 100%;
+}
+.input-box {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 7px 14px;
+    border-radius: 2px;
+}
+.paitients-table-header-row {
+    width: 100%;
+    border-top: 1px solid rgba(219, 222, 231,.6);
+    border-bottom: 1px solid rgba(219, 222, 231,.6);
+
+}
+.paitients-table-header-row > th {
+    padding: 16px;
+    border-top: 1px solid rgba(219, 222, 231,.6);
+    border-bottom: 1px solid rgba(219, 222, 231,.6);
+    color: rgb(67, 65, 65);
+}
+.paitients-table-header-row > th:first-child {
+    border: 1px solid rgba(219, 222, 231,.6);
+
+}
+.paitients-table-header-row > th:nth-child(2) {
+    width: 6%;
+}
+.paitients-table-header-row > th:nth-child(3) {
+    width: 11%;
+}
+.paitients-filter-start > td {
+    padding: 10px 6px;
+
+}
+.dropdown-icon {
+    width: 12px;
+    display: inline;
+    margin-left: -18px;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.status-option {
+    position: absolute;
+    top: 89%;
+    left: 0;
+    width: 100%;
+    padding: 4px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 2;
+    display: none;
+}
+.status-option > li {
+    padding: 6px 12px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(95, 90, 90);
+    cursor: pointer;
+    text-align: start;
+}
+.status-option > li:hover {
+    background-color: rgb(238, 235, 235);
+}
+.active-hover:hover~.status-option,
+.status-option:hover {
+    display: block;
+}
+.patient-table-frame {
+    border: 1px solid rgba(219, 222, 231,.6);
+    border-top: none;
+    margin-top: 2px;
+    min-width:1024px ;
+}
+.row-per-page {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(95, 90, 90);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 6px 4px 6px 18px;
+}
+.footer-drp {
+    width: 12px;
+}
+.table-footer-row {}
+.table-footer-row > td {
+    padding: 12px 2px;
+    border-top: 1px solid rgba(219, 222, 231,.6);
+}
+.pagination-frame {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(95, 90, 90);
+}
+.priv-next {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(95, 90, 90);
+}
+/* ================== MUZAFFAR CSS END =========================== */

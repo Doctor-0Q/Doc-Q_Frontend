@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doc-Q</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  
+  <!-- ========================================= MUZAFAR CODE START ========================== -->
+  <section class="main-patients-wrapper">
+    <div class="sub-hader-blue">
+
+    </div>
+    <div class="paitients-table-wrapper">
+      <div class="patients-list-frame">
+        <h4 class="">Patients Lists</h4>
+        <button class="primary-btn"> + Add Patient</button>
+      </div>
+      <div class="paitients-main-table-wrapper">
+        <img src="/images/magnifying-glass-solid.svg" class="serch-icon" alt="">
+        <input type="text" class="input-box w-full" placeholder="Search patient by id,name,email and status(0 or 1)" id="wholeSerch">
+      </div>
+      <div class="table-horizatal-scroll">
+      <table class="patient-table patient-table-frame" border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr class="al-center paitients-table-header-row">
+            <th><input type="checkbox"></th>
+            <th>id</th>
+            <th>name</th>
+            <th>clinic</th>
+            <th>email</th>
+            <th>mobile</th>
+            <th>Registred on</th>
+            <th>status</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="paitients-filter-start">
+            <td></td>
+            <td><input type="text" class="input-box w-full" placeholder="ID" id="patientId"></td>
+            <td><input type="text" class="input-box w-full" placeholder="Filter patient " id="name"></td>
+            <td></td>
+            <td><input type="text" class="input-box w-full" placeholder="Filter patient by email" id="patientEmail"></td>
+            <td><input type="text" class="input-box w-full" placeholder="filter patient by mobile no" id="patientNo"></td>
+            <td><input type="date" class="input-box w-full" placeholder="dd-mm-yyyy" id="patientdate"></td>
+            <td>
+              <div class="flex-center"><input type="text" class="input-box active-hover w-full" id="pationStatus" placeholder="Filter by status">
+                <img src="./images/caret-down-solid.svg" class="dropdown-icon" alt="dropw-down">
+                <ul class="status-option">
+                  <li id="input-active">Active</li>
+                  <li id="input-inactive">In Active</li>
+                </ul>
+              </div>
+            </td>
+
+         <tbody id="table_body">
+
+           <tr class="al-center common-table-row" >
+             <td><input type="checkbox"></td>
+             <td>1</td>
+             <td><div class="name-profile-freme"><span class="userNameCircle">UB</span><span>jhon</span> </div></td>
+             <td>Dco-q</td>
+             <td>jhon123@gmail.com</td>
+             <td>123456789</td>
+             <td>01-01-2024</td>
+             <td><div class="al-center status-toggale"><label class="switch">
+               <input type="checkbox">
+               <span class="slider round"></span>
+              </label><span class="checked">ACTIVE</span></div></td>
+              <td>
+               <div class="img-container">
+                 <span class="border-blue-r"><img src="./images/pen-clip-solid.svg" alt="" /></span>
+                 <span class="border-blue"><img src="./images/calendar-solid.svg" alt="" /></span>
+                 <span class="border-blue"><img src="./images/calendar-check-solid.svg" alt="" /></span>
+                 <span class="border-yellow"><img src="./images/paper-plane-solid.svg" alt="" /></span>
+                 <span class="border-blue"><img src="./images/user-solid.svg" alt="" /></span>
+                 <span class="border-red"><img src="./images/trash-solid.svg" alt="" /></span>
+               </div>
+             </td>
+           </tr>
+         </tbody>
+
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="table-footer-row">
+            <td colspan="3"><p class="row-per-page"> Rows per page..    <label for='number-dd'><b>Number</b></label>
+              <select id='number-dropdown' name='number'>
+                  <option selected value='10'>10</option>
+              </select></p></td>
+            <td colspan="6"><div class="pagination-frame">
+              <div class="">page <span id="start-page">1</span > of <span id="end-page">1</span></div>&nbsp;&nbsp;&nbsp;
+              <div class="priv-next"><span id="prev-btn">Prev</span><span id="next-btn">Next</span> </div>
+            </div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    </div>
+  </section>
+  <!-- ========================================= MUZAFAR CODE END ========================== -->
+
+  <script src="./javascript/app.js" type="module"></script>
+</body>
+
+</html>
