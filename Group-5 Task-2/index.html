@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="filters">
+        <p class="top-text">Filters</p>
+        <button class="btn">+ Apply Filters</button>
+    </div>
+
+    <div class="appointment">
+        <div class="appointment-top">
+            <div>
+                <p class="top-text">Appointment</p>
+                <div class="appointment-btns">
+                    <button>All</button>
+                    <button class="btn-2">Upcoming</button>
+                    <button>Past</button>
+                </div>
+            </div>
+            <div>
+                <button class="btn">+ Add Appointment</button>
+            </div>
+        </div>
+        <hr>
+        <div class="table-container">
+            <table>
+                <tr class="table-heading">
+                    <th>Patient Name</th>
+                    <th>Services</th>
+                    <th>Charges</th>
+                    <th>Payment Mode</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr class="appointment-data">
+                    <td data-label="Patient Name" class="patient-details">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                        <div>
+                            <p class="appointment-date">11 March 2024</p>
+                            <p class="patient-name">Satish Kumar <span>(09:50 - 10:00)</span></p>
+                            <p class="clinic-name">Clinic: <span>DOC-Q</span></p>
+                            <p class="clinic-desc">description: <span>no records found</span></p>
+                        </div>
+                    </td>
+                    <td data-label="Services">General check up</td>
+                    <td data-label="Charges">0</td>
+                    <td data-label="Payment Mode">Manual</td>
+                    <td data-label="Status">
+                        <button class="status-btn">Booked</button>
+                    </td>
+                    <td data-label="Action" class="action-btn">
+                        <button>👁️</button>
+                        <button>✒️</button>
+                        <button>📃</button>
+                        <button>❌</button>
+                    </td>
+                </tr>
+                <tr class="appointment-data">
+                    <td data-label="Patient Name" class="patient-details">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                        <div>
+                            <p class="appointment-date">11 March 2024</p>
+                            <p class="patient-name">Satish Kumar <span>(09:50 - 10:00)</span></p>
+                            <p class="clinic-name">Clinic: <span>DOC-Q</span></p>
+                            <p class="clinic-desc">description: <span>no records found</span></p>
+                        </div>
+                    </td>
+                    <td data-label="Services">General check up</td>
+                    <td data-label="Charges">0</td>
+                    <td data-label="Payment Mode">Manual</td>
+                    <td data-label="Status">
+                        <button class="status-btn">Booked</button>
+                    </td>
+                    <td data-label="Action" class="action-btn">
+                        <button>👁️</button>
+                        <button>✒️</button>
+                        <button>📃</button>
+                        <button>❌</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="prev-next-btns">
+        <button>Prev</button>
+        <button class="middle-btn">1</button>
+        <button>Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

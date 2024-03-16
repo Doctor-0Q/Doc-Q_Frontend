@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #678dff;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.top-text{
+    font-weight: 700;
+    color: #4775ff;
+}
+
+.btn {
+    padding: 8px 10px;
+    background-color: #4775ff;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn:hover {
+    background-color: #295fff;
+}
+
+.appointment {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.appointment-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.appointment-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.appointment-btns button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #4775ff;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;
+    color: #4775ff;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
+
+.appointment-btns .btn-2 {
+    background-color: #4775ff;
+    color: #ffffff;
+}
+
+.appointment-btns button:hover {
+    background-color: #4775ff;
+    color: #ffffff;
+}
+
+hr {
+    margin-block: 15px;
+}
+
+.table-container {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding-block: 10px;
+}
+
+table .table-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #606060;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.appointment-data {
+    padding: 20px;
+    font-size: 14px;
+    color: #606060;
+    border-radius: 10px;
+}
+
+.patient-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.patient-details .patient-name {
+    color: #4775ff;
+}
+
+.patient-details .patient-name span {
+    font-size: 12px;
+    color: #606060;
+}
+
+.patient-details .clinic-name span {
+    color: #4775ff;
+}
+
+.patient-details .clinic-desc {
+    font-weight: 700;
+}
+
+.patient-details .clinic-desc span {
+    font-weight: 500;
+}
+
+.status-btn {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #4775ff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.action-btn button {
+    padding: 5px;
+    border: 1px solid #4775ff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.2s all ease-in-out;
+}
+
+.action-btn button:hover {
+    background-color: #4775ff;
+}
+
+.prev-next-btns {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.prev-next-btns button {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #4775ff;
+    background-color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #383838;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.prev-next-btns .middle-btn {
+    background-color: #4775ff;
+    color: #ffffff;
+}
+
+.prev-next-btns button:hover {
+    background-color: #4775ff;
+    color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+    .appointment-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .appointment-top:last-child {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    table .table-heading {
+        display: none;
+    }
+
+    table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+
+    table tr td {
+        text-align: right;
+        padding-left: 30%;
+    }
+
+    table tr .patient-details {
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    table .appointment-data {
+        padding: 10px;
+    }
+
+    table td {
+        justify-content: flex-end;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0px;
+        padding-left: 30px;
+        text-align: left;
+        font-weight: 600;
+        padding-right: 50%;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        padding: 0px;
+    }
+}
