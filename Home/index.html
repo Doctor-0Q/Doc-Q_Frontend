@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="outerConatiner">
+      <!-- Navbar -->
+      <div class="top">
+        <div class="logo">
+          <img src="IMAGES/companyLogo.png" width="90px" height="90px" />
+          <img
+            id="secondimg"
+            src="IMAGES/Doc-Q.png"
+            width="60px"
+            height="20px"
+          />
+        </div>
+        <div class="menuContainer">
+          <ul>
+            <li><a href="./home.html" style="color: #5284b5">Home</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li><a href="./findDoctors.html">Find Doctors</a></li>
+            <li><a href="./register.html">Login\Register</a></li>
+          </ul>
+        </div>
+        <div class="searching">
+          <input placeholder="Searching" />
+        </div>
+
+        <div class="hamburgerIcon">
+          <a>
+            <i
+              class="fa fa-bars"
+              style="font-size: 18px"
+              onclick="handleMenu()"
+            ></i
+          ></a>
+          <div id="setIcons" style="margin-top: 0.5px"></div>
+        </div>
+      </div>
+
+      <!-- Main Page -->
+      <div class="bottom">
+        <div class="leftBottom">
+          <h1 id="docqheading">
+            Doc-Q – Where Your<br />
+            Time Matters as Much<br />
+            as Your Health
+          </h1>
+          <div id="leftWave">
+            <img src="IMAGES/output-onlinepngtools (1) 2.png" width="380px" />
+          </div>
+          <p id="paraInformation">
+            Break free from waiting for doctor appointments!<br />
+            Prioritizing your time with swift consultations,<br />
+            surgeries, and rapid medical services for a<br />healthier,
+            hassle-free experience."
+          </p>
+          <button id="bookappointmentbtn">Book Appointment</button>
+        </div>
+        <div class="middleBottom">
+          <div class="leftrightmainContainer">
+            <img id="dtimg" src="IMAGES/doctorsimage.png" width="380px" />
+            <img
+              id="secimg"
+              src="IMAGES/Group 8.png"
+              width="120px"
+              height="120px"
+            />
+          </div>
+        </div>
+        <div class="rightBottom">
+          <div class="arcdivstyle">
+            <img src="IMAGES/Arc.png" width="120px" height="120px" />
+          </div>
+          <div class="secondwave">
+            <img src="IMAGES/output-onlinepngtools 2.png" width="550px" />
+          </div>
+          <p id="quatationPara" style="color: #bbbbbb">
+            “A trusted assistance companion for your<br />
+            health needs. ”
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="indexx.js"></script>
+    <div class="component">
+      <div class="jambotron">
+        <div class="group">
+          <div class="overlap-group">
+            <img class="img" src="IMAGES/clock.png" />
+          </div>
+          <div class="text-wrapper">24 hours services</div>
+          <p class="div">lorem ipsum dolor sit amet,connector adicipafg</p>
+        </div>
+        <div class="group-2">
+          <div class="overlap-group">
+            <img class="bi-plus" src="IMAGES/batery.png" />
+          </div>
+          <div class="text-wrapper-2">Best reviews</div>
+          <p class="p">lorem ipsum dolor sit amet,connector adicipafg</p>
+        </div>
+        <div class="group-3">
+          <div class="overlap-group">
+            <img class="img" src="IMAGES/hands.png" />
+          </div>
+          <div class="text-wrapper-3">High quality care</div>
+          <p class="text-wrapper-4">
+            lorem ipsum dolor sit amet,connector adicipafg
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="support">
+      <div class="textone">
+        <p class="my-text">Your health requierments are our first focus.</p>
+        <p class="my-text2">
+          Our team of skilled medical professionals and aids ensure that<br />
+          you get that care you need and deserve
+        </p>
+      </div>
+
+      <div class="reqimg">
+        <section>
+          <img src="IMAGES/CustSup.png" height="50px" alt="" />
+          <p class="caption">Customer Support</p>
+        </section>
+
+        <section>
+          <img src="IMAGES/ChamSer.png" height="50px" alt="" />
+          <p class="caption">Chamber Serviece</p>
+        </section>
+
+        <section>
+          <img src="IMAGES/OnlineSpcl.png" height="50px" alt="" />
+          <p class="caption">Online Specialist</p>
+        </section>
+
+        <section>
+          <img src="IMAGES/PndS.png" height="50px" alt="" />
+          <p class="caption">Privacy and Security</p>
+        </section>
+      </div>
+    </div>
+
+    <section id="doc-feature">
+      <div class="doc-main-container">
+        <h1 class="feature-title">Looking for Specialist</h1>
+        <div class="doc-container">
+          <div class="doc-card active-doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/neurology.svg" alt="svg" />
+              </div>
+              <div class="card-title">Neurology</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/blood_pressure.svg" alt="svg" />
+              </div>
+              <div class="card-title">cardiology</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/surgical_sterilization.svg" alt="svg" />
+              </div>
+              <div class="card-title">Surgery</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/opthalmology.svg" alt="svg" />
+              </div>
+              <div class="card-title">Gasteorlgy</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/tooth.svg" alt="svg" />
+              </div>
+              <div class="card-title">Dentist</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/opthalmology.svg" alt="svg" />
+              </div>
+              <div class="card-title">opthalmology</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/pediatric_surgery.svg" alt="svg" />
+              </div>
+              <div class="card-title">Padiarty</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="card-top">
+              <div class="card-img">
+                <img src="IMAGES/orthopaedics.svg" alt="svg" />
+              </div>
+              <div class="card-title">Orthopadics</div>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Adipiscing commodo nunc mi ut consequat pretium........
+              </p>
+              <br />
+            </div>
+            <div class="card-bottom">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================================== Top Specialist CODE IS START =================== -->
+    <section class="top-specialist-section">
+      <div class="container">
+        <div class="specialist-wrapper">
+          <!-- slider code -->
+          <h3 class="fs-45-32 fw-700">Top Specialist</h3>
+          <div class="arrow-frame-wrapper">
+            <img
+              src="IMAGES/arrowleft.png"
+              onclick="scrollLeft1()"
+              class="arrowleft"
+              alt=""
+            />
+            <img
+              src="IMAGES/arrowright.png"
+              onclick="scrollRight()"
+              class="arrowright"
+              alt=""
+            />
+            <div class="specialist-doctors-frame"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================================== Top Specialist CODE IS END =================== -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ================================ Testimonials CODE START ============================== -->
+    <div class="container">
+      <div class="testimonials-container">
+        <p class="testimonials-heading p-10">Testimonials</p>
+        <p class="testimonials-para p-10">
+          Our team of skilled medical professionals and aids ensure that you get
+          the care you need and deserve.
+        </p>
+      </div>
+      <div class="indicators mt-20">
+        <div class="elipse-container p-10">
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+          <span class="rectangle"></span>
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+          <span class="elipse"></span>
+        </div>
+      </div>
+      <div class="members-container p-10 mt-20">
+        <div class="individual-member">
+          <p class="member-info pl-20 p-10 fs-20-14">
+            Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+            aliquam tristique porttitor blandit nibh dui tristique quam.......
+          </p>
+          <div class="ratings pl-20 p-10">
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+
+            <p class="member-name">John Doe</p>
+            <p class="member-prof">Engineer</p>
+            <img src="IMAGES/Rectangle 60.png" class="member-profile" alt="" />
+          </div>
+        </div>
+        <div class="individual-member">
+          <p class="member-info pl-20 p-10">
+            Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+            aliquam tristique porttitor blandit nibh dui tristique quam.......
+          </p>
+          <div class="ratings pl-20 p-10">
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+
+            <p class="member-name">John Doe</p>
+            <p class="member-prof">Engineer</p>
+            <img src="IMAGES/Rectangle 59.png" class="member-profile" alt="" />
+          </div>
+        </div>
+        <div class="individual-member">
+          <p class="member-info pl-20 p-10">
+            Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+            aliquam tristique porttitor blandit nibh dui tristique quam.......
+          </p>
+          <div class="ratings pl-20 p-10">
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+
+            <p class="member-name">John Doe</p>
+            <p class="member-prof">Engineer</p>
+            <img src="IMAGES/Rectangle 58.png" class="member-profile" alt="" />
+          </div>
+        </div>
+        <div class="individual-member">
+          <p class="member-info pl-20 p-10">
+            Augue nulla montes, eget congue dolor magna vitae porttitor. Mollis
+            aliquam tristique porttitor blandit nibh dui tristique quam.......
+          </p>
+          <div class="ratings pl-20 p-10">
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+            <img src="IMAGES/emojione_star.png" alt="" />
+
+            <p class="member-name">John Doe</p>
+            <p class="member-prof">Engineer</p>
+            <img src="IMAGES/Rectangle 57.png" class="member-profile" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================ Testimonials CODE END ============================== -->
+    <script>
+      var doctorsContainer = document.querySelector(
+        ".specialist-doctors-frame"
+      );
+      function scrollLeft1() {
+        console.log("scroll left");
+        doctorsContainer.scrollBy(290, 0);
+      }
+
+      function scrollRight() {
+        console.log("scroll right");
+        doctorsContainer.scrollBy(-290, 0);
+      }
+
+      var doctorsData = [
+        {
+          name: "Dr. Travis Oman",
+          specialization: "Opthalmogist",
+          reviews: 120,
+          img: "Rectangle33.png",
+        },
+        {
+          name: "Dr. Richard Brook",
+          specialization: "Gastroenterlogist",
+          reviews: 120,
+          img: "Rectangle35.png",
+        },
+        {
+          name: "Dr. Annah Ray",
+          specialization: "entician",
+          reviews: 120,
+          img: "Rectangle34.png",
+        },
+        {
+          name: "Dr. Richard Brook",
+          specialization: "Gastroenterlogist",
+          reviews: 120,
+          img: "Rectangle35.png",
+        },
+        {
+          name: "Dr. Vivian Monroe",
+          specialization: "PPediatry Surgeon",
+          reviews: 120,
+          img: "Rectangle36.png",
+        },
+        {
+          name: "Dr. Richard Brook",
+          specialization: "Gastroenterlogist",
+          reviews: 120,
+          img: "Rectangle35.png",
+        },
+      ];
+
+      for (var i = 0; i < doctorsData.length; i++) {
+        var doctor = doctorsData[i];
+
+        var doctorHtml = `
+        <div class="card-box text-center">
+            <div class="img-box ">
+                <img src="./images/${doctor.img}" class="image" alt="">
+                <img src="./images/reateing.png" class="reating" alt="">
+            </div>
+            <h3 class="fs-24-18 fw-600 text-center name-heading">${doctor.name}</h3>
+            <p class="fs-16-12 fw-500 black-50 text-center first-para">${doctor.specialization}</p>
+            <button class="primary-btn mx-auto">Book Now</button>
+            <p class="fs-16-12 fw-500 black-50 text-center sec-para">${doctor.reviews} Reviews
+        </div>
+        `;
+
+        doctorsContainer.innerHTML += doctorHtml;
+      }
+    </script>
+    <!-- Get Started Section -->
+    <div class="get-started">
+      <div>
+        <h2>Ready to get started?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          dignissimos.
+        </p>
+      </div>
+      <div>
+        <button>Create appointment now!</button>
+      </div>
+    </div>
+
+    <!-- Companies Section -->
+    <div class="companies">
+      <img src="IMAGES/who.png" alt="WHO" />
+      <img src="IMAGES/medilab.png" alt="MediLab" />
+      <img src="IMAGES/health-net.png" alt="Health Net" />
+      <img src="IMAGES/health-care.png" alt="Health Care" />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo">
+        <img src="IMAGES/Logo.png" alt="Logo" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+          itaque!
+        </p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resourses</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+      <div class="foot-end">
+        <div class="social-icons">
+          <img src="IMAGES/instagram.png" alt="instagram" />
+          <img src="IMAGES/facebook.png" alt="facebook" />
+          <img src="IMAGES/linkedin.png" alt="linkedin" />
+          <img src="IMAGES/twitter.png" alt="twitter" />
+        </div>
+        <div class="lang">
+          <img src="IMAGES/globe.png" alt="Globe" />
+          <select name="language" id="language">
+            <option value="english">English - en</option>
+            <option value="hindi">Hindi - in</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

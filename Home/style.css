@@ -1,0 +1,1193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .outerConatiner {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    }
+    .top {
+    width: 100%;
+    height: 12%;
+    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    }
+    .logo {
+    display: flex;
+    align-items: center;
+    }
+    .secondimg {
+    position: relative;
+    right: 10px;
+    }
+  
+    .menuContainer ul {
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    }
+    ul li a {
+    text-decoration: none;
+    color: gray;
+    text-decoration-line: line-through;
+    }
+    .menuContainer ul li {
+    margin-left: 40px;
+    }
+    .searching input {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+    color: gray;
+    text-decoration: none;
+    padding-left: 15px;
+    }
+    .hamburgerIcon {
+    display: none;
+    }
+    /* ----------navbar for mobile screen-------- */
+    @media screen and (min-width: 200px) and (max-width: 420px) {
+    .menuContainer {
+    display: none;
+    }
+    .menuContainer ul {
+    display: none;
+    }
+    .searching {
+    display: none;
+    }
+    .hamburgerIcon {
+    display: block;
+    }
+    }
+    /* ----------navbar for tablet screen-------- */
+    @media screen and (min-width: 421px) and (max-width: 768px) {
+    .menuContainer {
+    display: none;
+    }
+    .menuContainer ul {
+    display: none;
+    }
+    .searching {
+    display: block;
+    /* width:10px; */
+    }
+    .hamburgerIcon {
+    display: block;
+    }
+    }
+    
+    /* main page css */
+    
+    .bottom {
+    width: 100%;
+    height: 88%;
+    /* border: 2px solid blue; */
+    padding-top: 170px;
+    
+    display: flex;
+    }
+    
+    .leftBottom {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 255, 98); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .middleBottom {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    }
+    
+    #leftWave {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    
+    #paraInformation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #787878;
+    }
+    #bookappointmentbtn {
+      cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 40px;
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: #5284b5;
+    color: #ffffff;
+    }
+    .middleBottom {
+    padding-top: 20px;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    }
+    #secimg {
+    position: relative;
+    bottom: 175px;
+    left: 270px;
+    }
+    
+    .rightBottom {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid rgb(255, 0, 179); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .secondwave {
+    margin-top: 10px;
+   
+    }
+    
+    #quatationPara {
+    position: relative;
+    top: 200px;
+    right: 70px;
+    }
+    
+    /* Responsiveness of Main Page */
+    /* ----------for mobile screen------ */
+    @media screen and (min-width: 200px) and (max-width: 420px) {
+    .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .leftBottom {
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 255, 98); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    }
+    .middleBottom {
+    width: 100%;
+    /* height: 100%; */
+    /* border: 1px solid pink; */
+    }
+    
+    #leftWave {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    
+    #paraInformation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #787878;
+    }
+    .book_apt_btn{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+    }
+    #bookappointmentbtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 34%;
+    margin: auto;
+    height: 50px;
+    right: 0px;
+    border: none;
+    background-color: #5284b5;
+    color: #ffffff;
+    }
+    .middleBottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+    }
+    #secimg {
+    position: relative;
+    bottom: 175px;
+    left: 270px;
+    }
+    
+    .rightBottom {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    height: 100%;
+    /* border: 1px solid rgb(255, 0, 179); */
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .secondwave {
+    margin-top: 40px;
+    }
+    
+    #quatationPara {
+    /* position: relative; */
+    top: 20px;
+    padding-bottom: 20px;
+    right: 0px;
+    width: 80%;
+    margin-bottom: 50px;
+    margin: auto;
+    /* border: 1px solid teal; */
+    }
+    }
+    
+    /* -----------for tablet screen------ */
+    @media screen and (min-width: 421px) and (max-width: 1180px) {
+    .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .leftBottom {
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 255, 98); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .middleBottom {
+    width: 100%;
+    /* height: 100%; */
+    /* border: 1px solid pink; */
+    }
+    
+    #leftWave {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    #docqheading{
+    font-size: 40px;
+    }
+    #paraInformation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #787878;
+    font-size: 25px;
+    }
+    .book_apt_btn{
+    width: 45%;
+    margin: 40px auto;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+    }
+    #bookappointmentbtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 34%;
+    margin: auto;
+    height: 50px;
+    right: 0px;
+    border: none;
+    
+    
+    
+    background-color: #5284b5;
+    color: #ffffff;
+    }
+    .middleBottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+    }
+    #secimg {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    }
+    
+    .rightBottom {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    height: 100%;
+    /* border: 1px solid rgb(255, 0, 179); */
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .secondwave {
+    margin-top: 40px;
+    }
+    
+    #quatationPara {
+    /* position: relative; */
+    top: 20px;
+    padding-bottom: 20px;
+    right: 0px;
+    width: 80%;
+    margin-bottom: 50px;
+    margin: auto;
+    /* border: 1px solid teal; */
+    text-align: justify;
+    font-size: 30px;
+    }
+    }
+    .reqimg {
+        margin-top: -50px;
+        margin-top: 65px;
+        margin-bottom: 20px;
+
+    }
+    
+    .reqimg section {
+        display: inline-block;
+        padding: 60px;
+        margin: 50px -50px;
+        margin-left: 130px;
+    }
+    
+    .reqimg section:nth-child(1) {
+        background-color: #cfe5fd; /* Light coral */
+    }
+    
+    .reqimg section:nth-child(2) {
+        background-color: #e1eeff; /* Light blue */
+    }
+    
+    .reqimg section:nth-child(3) {
+        background-color: #f1f4e9; /* Pale green */
+    }
+    
+    .reqimg section:nth-child(4) {
+        background-color: #e9f7f8; /* Pink */
+    }
+    
+    .reqimg section img {
+        /* Center the image horizontally */
+        display: block;
+        margin: 0 auto;
+        /* Add any other styles you need */
+    }
+    
+    .fourgs {
+        text-align: center;
+    }
+    
+  
+    .my-text {
+        
+        margin: 0 45px;
+        font-family: 'FF DIN Round Bold', Arial, sans-serif;
+        /* Optionally, you can adjust other styles as needed */
+        font-size: 35px;
+        font-weight: bold; /* Ensure it's bold */
+        /* Add any other styles you want to apply */
+    }
+    
+    .my-text2 {
+        margin-top: -30px;
+        color: rgba(121, 113, 113, 0.79);
+        font-family: 'FF DIN Round Bold', Arial, sans-serif;
+        /* Optionally, you can adjust other styles as needed */
+        font-size: 14px;
+        margin-left: 60rem;
+        font-weight: lighter;
+        /* Add any other styles you want to apply */
+    }
+    
+    .caption {
+        font-size: 15px;
+        font-family: 'ADShowcase Sans Mini', sans-serif;
+        font-weight: bold;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      
+        font-family: "Source Sans Pro", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      #doc-feature {
+        background: #5284b5;
+        max-width: 1728px;
+        color: #e9f7f8;
+        width: 100%;
+      }
+      .doc-main-container {
+        padding: 3rem;
+      }
+      .doc-container {
+        display: flex;
+        /* background-color: red; */
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        column-gap: 34px;
+      }
+      .feature-title {
+        margin: 0 auto;
+        width: 80%;
+        color: #e9f7f8;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45px;
+      }
+      
+      .doc-card {
+        max-width: 367px;
+        height: 360px;
+        margin-top: 40px;
+        padding: 15px;
+        border: 1px solid rgba(233, 247, 248, 0.5);
+        border-radius: 5px;
+      }
+      
+      .doc-card:hover {
+        max-width: 367px;
+        height: 360px;
+        margin-top: 40px;
+        padding: 15px;
+      
+        font-size: 24px;
+        transform: scaleX(1.04) scaleY(1.06); /* Adjusted */
+        transform-origin: top left; /* Added */
+        z-index: 4;
+      
+        transition: all ease-in-out 0.2s;
+      }
+      .doc-card:hover .card-img > img {
+        width: 80px;
+        transition: all ease-in-out 0.2s;
+        height: 80px;
+      }
+      .doc-card:hover .card-title {
+        transition: all ease-in-out 0.2s;
+        padding-top: 20px;
+        font-size: 28px;
+      }
+      .doc-card:hover .card-content > p {
+        font-size: 20px;
+        transition: ease-in-out 0.2s;
+      }
+      
+      .card-top {
+        padding: 20px 0 20px 10px;
+        display: flex;
+        justify-content: start;
+        /* align-items: center; */
+      }
+      .card-img > img {
+        width: 70px;
+        height: 70px;
+      }
+      .card-title {
+        padding: 10px 0 0 5px;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      .card-content {
+        max-width: 323px;
+        height: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .card-content > p {
+        /* overflow-y: scroll; */
+        text-overflow: ellipsis;
+        max-width: 280px;
+        padding: 10px 0 10px 0;
+      
+        /* text-overflow: hidden; */
+        font-family: "Source sans Pro";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(233, 247, 248, 0.85);
+      }
+      .card-bottom {
+        padding-bottom: 5rem;
+        width: fit-content;
+        margin-top: 5px;
+      }
+      .card-bottom > a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      /*  */
+/* =================================== Testimonials CSS CODE START ================================ */
+@media (width<=1500px) {
+    .individual-member {
+      padding: 25px 10px;
+    }
+    .member-profile {
+      bottom: -15px;
+    }
+    .member-info {
+      padding-right: 30px !important;
+    }
+  }
+  @media (width<=360px) {
+    .individual-member {
+      padding: 25px 10px;
+      /* margin-right: 10px; */
+      width: 320px;
+    }
+    .members-container {
+      /* overflow-y: hidden; */
+      padding: 6px;
+    }
+    .member-profile {
+      bottom: -10px;
+    }
+    .member-prof {
+      padding: 5px 0 10px 35px;
+    }
+    .member-name {
+      padding: 5px 0 0 35px;
+    }
+  }
+  @media (width<=330px) {
+    .member-profile {
+      bottom: -15px;
+    }
+  }
+  /* =================================== Testimonials CSS CODE End ================================ */
+  @media (max-width: 920px) {
+    .arrowleft {
+      position: absolute;
+      z-index: 8;
+      left: 35%;
+      bottom: -51px;
+      top: unset;
+      cursor: pointer;
+      transform: translateX(-70%);
+    }
+    .arrowright {
+      position: absolute;
+      z-index: 8;
+      right: 29%;
+      bottom: -40px;
+      top: unset;
+      cursor: pointer;
+      transform: translateX(-40%);
+    }
+    .member-info {
+      padding-right: 30px !important;
+    }
+  }
+  @import url( 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1728px;
+    width: 100%;
+    margin: auto;
+    padding: 0 clamp(10px,5%,103px);
+    /* border: 1px solid red; */
+}
+.mw-625 {
+    width: 100%;
+    max-width: 625px;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ==================================================== Top Specialist CSS CODE IS STSERT ================ */
+.text-center {
+    text-align: center;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fs-45-32 {
+    font-size: 45px;
+    line-height: 70px;
+}
+.fs-24-18 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.fs-20-14 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.fs-16-12 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.black-50 {
+    color: rgba(0, 0, 0,5);
+}
+.primary-btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    min-width: 150px;
+    padding: 10px 16px;
+    color: white;
+    font-weight: 600;
+    background-color: #5284B5;
+}
+.arrow-frame-wrapper{
+    position: relative
+}
+.specialist-doctors-frame {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 60px 0;
+    overflow: auto;
+  ;
+}
+.specialist-doctors-frame::-webkit-scrollbar {
+    appearance: none;
+}
+.arrowleft{
+    position: absolute;
+    z-index: 8;
+    left: -40px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.arrowright{
+    position: absolute;
+    z-index: 8;
+    right: -40px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.card-box {
+    width: 25%;
+    max-width: 366px;
+    min-width: 290px;
+    /* width: clamp(300px,25%,366px); */
+    padding: 13px;
+    
+    border: 1px solid #1CB5BDD9;
+}
+.img-box {
+    width: 100%;
+    height: 177px;
+    position: relative;
+
+}
+.img-box > .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-box > .reating {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+.name-heading {
+    padding-top: 24px;
+}
+.first-para {
+    padding: 4px 0 20px;
+}
+.sec-para {
+    padding: 10px 0;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ==================================================== Top Specialist CSS CODE IS END ================ */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* =================================== Testimonials CSS CODE START ================================ */
+
+.p-10{
+    padding: 10px 0 10px 20px;
+}
+.p-20{
+    padding: 20px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.m-10{
+    margin: 10px;
+}
+.fs-20-14 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.container2{
+    max-width: 1728px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    /* border: 1px solid black; */
+    flex-direction: column;
+}
+.testimonials-container{
+max-width: 700px;
+
+}
+.testimonials-heading{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.testimonials-para{
+    font-size: 24px;
+    font-weight: 400;
+     max-width: 650px;
+    color: #787878;
+
+}
+.indicators{
+    max-width: 741px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elipse-container{
+    width: 216px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elipse{
+    background: #E9F7F8;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+}
+.rectangle{
+    background: #5284B5;
+   width: 32px;
+   height: 15px;
+   border-radius: 5px;
+}
+.members-container{
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 20px 40px 20px;
+    overflow-y: hidden;
+    /* max-height: 600px; */
+}
+.individual-member{
+    background: #E9F7F8;
+    min-width: 341.3px;
+    height: 345.5px;
+    padding:  45px 33px;
+    border-radius: 0px 150px 150px 150px;
+    margin: 5px 20px 5px 0;
+    position: relative;
+}
+.member-info{
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+}
+.member-name{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0 0 27px;
+}
+.member-prof{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0 10px 27px;
+}
+.member-profile{
+position: absolute;
+right: 0px;
+bottom: -40px;
+}
+.members-container::-webkit-scrollbar {
+    appearance: none;
+}
+
+
+/* =================================== Testimonials CSS CODE END ================================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Get Started Section */
+.get-started {
+    max-width: 90%;
+    background: linear-gradient(to right, #5586b9, #7aade4);
+    margin-inline: auto;
+    margin-block: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-started button {
+    padding: 10px 20px;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #5586b9;
+    font-weight: 600;
+}
+
+/* Companies Section */
+.companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 50px;
+} 
+
+.companies img {
+    height: 50px;
+    width: 200px;
+    object-fit: contain;
+}
+
+/* Footer Section */
+footer {
+    background-color: #e8f7f9;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 80px 30px;
+    color: #6a7372;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer .logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+footer div h3 {
+    text-transform: uppercase;
+    color: #5285b4;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer div ul li {
+    list-style: none;
+    padding-block: 3px;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #6a7372;
+    font-size: 14px;
+}
+
+footer .social-icons img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    padding: 5px;
+}
+
+footer .foot-end .lang {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #5285b4;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+
+footer .foot-end .lang img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+footer .foot-end .lang select {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+@media only screen and (max-width: 480px) {
+    .get-started {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .companies {
+        padding-block: 20px;
+    }
+
+    .companies img {
+        height: 30px;
+        width: 80px;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        padding-block: 30px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .get-started {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .companies {
+        padding-block: 30px;
+    }
+
+    .companies img {
+        height: 40px;
+        width: 100px;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-block: 30px;
+    }
+}
+
+.component {
+    width: 1532px;
+    height: 220px;
+  }
+  
+  .component .jambotron {
+    position: relative;
+    height: 190px;
+    background-color: #5284B5;
+    border-radius: 5px;
+  }
+  
+  .component .group {
+    width: 367px;
+    left: 133px;
+    position: absolute;
+    height: 120px;
+    top: 35px;
+  }
+  
+  .component .overlap-group {
+    position: absolute;
+    width: 75px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .component .img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 46px;
+    left: 21px;
+  }
+  
+  .component .text-wrapper {
+    position: absolute;
+    top: 15px;
+    left: 109px;
+    font-family: "Source Sans Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .div {
+    position: absolute;
+    width: 257px;
+    top: 55px;
+    left: 106px;
+    font-family: "Source Sans Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .group-2 {
+    width: 358px;
+    left: 591px;
+    position: absolute;
+    height: 120px;
+    top: 35px;
+  }
+  
+  .component .bi-plus {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 44px;
+    left: 21px;
+  }
+  
+  .component .text-wrapper-2 {
+    position: absolute;
+    top: 15px;
+    left: 97px;
+    font-family: "Source Sans Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .p {
+    top: 55px;
+    left: 97px;
+    position: absolute;
+    width: 257px;
+    font-family: "Source Sans Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .group-3 {
+    width: 365px;
+    left: 1040px;
+    position: absolute;
+    height: 120px;
+    top: 35px;
+  }
+  
+  .component .text-wrapper-3 {
+    position: absolute;
+    top: 8px;
+    left: 104px;
+    font-family: "Source Sans Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .text-wrapper-4 {
+    top: 48px;
+    left: 104px;
+    position: absolute;
+    width: 257px;
+    font-family: "Source Sans Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  
