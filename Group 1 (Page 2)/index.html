@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="outerConatiner">
+
+        <!-- Navbar -->
+        <div class="top">
+            <div class="logo">
+                <img src="./companyLogo.png" width="90px" height="90px" />
+                <img id="secondimg" src="./Doc-Q.png" width="60px" height="20px" />
+            </div>
+            <div class="menuContainer">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./findDoctors.html" style="color:#5284B5 ;">Find Doctors</a></li>
+                    <li><a href="./register.html">Login\Register</a></li>
+                </ul>
+            </div>
+            <div class="searching">
+                <input placeholder="Searching" id="userSearch" />
+            </div>
+
+            <div class="hamburgerIcon">
+
+                <a> <i class="fa fa-bars" style="font-size:18px" onclick="handleMenu()"></i></a>
+                <div id="setIcons" style="margin-top: 0.5px;">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Page -->
+        <div class="bottom">
+            <div class="upperbottom">
+                <button>Top Specialist in Neurology</button>
+            </div>
+            <div class="lowerbottom">
+                <div class="headingDoctorService">
+                    <h3>Doctor Names</h3>
+                    <h3>Service</h3>
+                </div>
+                <ul class="userList" id="userList1">
+                    <!-- data come dynamically -->
+                    <!-- <li id="prelist" class="hide"> Also can message show here</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

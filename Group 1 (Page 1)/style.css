@@ -214,7 +214,7 @@ nav ul li a:hover {
     z-index: 1; 
 } 
 /* Media Queries */
-@media screen and (max-width: 483px) {
+@media screen and (max-width: 720px) {
     .image-container-right img:nth-child(1) {
         display: none;
     }
@@ -281,14 +281,15 @@ nav ul li a:hover {
 }
 
 /* Media Queries for Phones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .image-container-mid img:nth-child(1),
     .image-container-mid img:nth-child(2),
     .image-container-mid img:nth-child(3) {
         position: relative;
         width: 100%;
+        height: auto;
         left: 0;
-        top:40px;
+        top: 30px;
         bottom: auto;
     }
 }
@@ -384,4 +385,3 @@ footer {
         margin: 10px 0; 
     }
 }
-
