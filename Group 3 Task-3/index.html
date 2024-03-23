@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo_container">
+                <div class="logo">
+                    DOC-Q
+                </div>
+            </div>
+            <div class="nav_items">
+                <div class="nav_search">
+                    <form action="">
+                        <input type="text" name="search" id="" placeholder="Search now...">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+                    </form>
+                </div>
+                <div class="doc_info">
+                    <p>John Doe</p>
+                    <h5>General Doctor</h5>
+                </div>
+                <div class="nav_date">
+                    <input type="date" name="" id="">
+                </div>
+                <div class="nav_menu_icons">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <i class="fa-regular fa-bell fa-2x"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+        <div class="hero_section">
+            <div class="sidebar">
+                <p>menu</p>
+                <ul>
+                    <li class="sidebar_item  "><a href="#" class="sidenav_link ">
+                            <div>
+                                <i class="fa-solid fa-chart-pie fa-2x"></i>
+                            </div>
+                            <p>Dashboard</p>
+                        </a> </li>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-solid fa-calendar-days fa-2x"></i>
+                            </div>
+                            <p>Schedule</p>
+                        </a>
+                    </li>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link active">
+                            <div>
+                                <i class="fa-regular fa-calendar-check fa-2x"></i>
+                            </div>
+                            <p>Tasks</p>
+                        </a>
+                    </li>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-solid fa-user-group fa-2x"></i>
+                            </div>
+                            <p>Patients</p>
+                        </a>
+                    </li>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-regular fa-envelope fa-2x"></i>
+                            </div>
+                            <p>Messages</p>
+                            <p>4</p>
+                        </a> </li>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-solid fa-chart-simple fa-2x"></i>
+                            </div>
+                            <p>Analytics</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="divider_bottom_1">
+                </div>
+                <p>general</p>
+                <ul>
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-solid fa-gear fa-2x"></i>
+                            </div>
+                            <p>
+                                Setting
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
+                            <div>
+                                <i class="fa-regular fa-circle-question fa-2x"></i>
+                            </div>
+                            <p>
+                                Support
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="divider_bottom_2">
+                </div>
+            </div>
+            <div class="main-container">
+
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tasks</a></li>
+                </ul>
+
+
+                <div class="tasks_container">
+                    <div class="uncomplete_tasks">
+                        <div class="uncomplete_task_menu">
+                            <h3>To be Completed</h3>
+                            <div class="uncomplete_task_icon">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-filter"></i>
+                                <i class="fa-regular fa-circle-question"></i>
+                            </div>
+
+
+                        </div>
+                        <div class="uncomplete_task_info">
+                            <div class="uncomplete_task_info_title">
+                                <i class="fa-solid fa-star"></i>
+                                <h3>New </h3>
+                            </div>
+                            <hr>
+                            <div class="info-content">
+                                <input type="checkbox" id="check">
+                                <div>
+                                    <p>Set up afternoon meeting</p>
+                                    <p>25 Oct 2023</p>
+                                </div>
+                                <div class="icon-dot">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="create_tasks">
+                        <div class="new_task_menu">
+                            <h3>Task #1</h3>
+                            <div class="task_menu_icons">
+                                <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-rotate-right"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+
+                        </div>
+                        <div class="new_task_info">
+                            <div class="new_task_info_title">
+                                <h3>Set up afternoon meeting</h3>
+                            </div>
+                            <hr>
+                            <div>
+
+                                <p>Set up a virtual meeting for all consultants by afternoon. Link must be communicated
+                                    to
+                                    everyone before 1pm.
+                                    <br><br>
+                                </p>
+                                <p><i class="fa-regular fa-clock timer_icon"></i>Today</p>
+                            </div>
+                            <hr>
+                            <div>
+
+                                <p><i class="fa-solid fa-tag tag_icon"></i>Urgent</p>
+                                <br>
+                                <p>John Doe Created task at <span> 25 Oct</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+
+    </header>
+
+    <script src="./js/index.js""></script>
+</body>
+
+</html>
