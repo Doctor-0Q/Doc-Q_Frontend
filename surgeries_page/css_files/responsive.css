@@ -1,0 +1,14 @@
+@media (max-width:1024px) {
+    .surgeries-main-container{
+        flex-wrap: wrap;
+    }
+    .form-main-container,.surgeries-container,.clinics-imgs {
+        width: 100%;
+    }
+    .dept-container,.clinics-imgs,.footer-container{
+        width: 100%;
+    }
+    .single-type{
+        min-width: 250px;
+    }
+}
